@@ -1,65 +1,109 @@
-.hero {
-    background-image: url('../../assests/img/hero.jpg');
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 100vh; /* full screen height */
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    position: relative;
-    color: white;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
-  
-  .hero-overlay {
-    background: rgba(0, 0, 0, 0.2); /* optional for contrast */
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    padding-right: 25%;
-  }
-  
-  .hero-content {
-    text-align: left;
-    max-width: 400px;
-  }
-  
-  .hero-category {
-    font-size: 0.9rem;
-    color: #d2f3ec;
-    margin-bottom: 0.5rem;
-  }
-  
-  .hero-title {
-    font-size: 3rem;
-    line-height: 1.2;
-    margin: 0;
-    color: white;
-  }
-  
-  .hero-desc {
-    font-size: 1rem;
-    color: #d2f3ec;
-    margin: 1rem 0;
-  }
-  
-  .hero-btn {
-    padding: 10px 20px;
-    font-size: 1rem;
-    background-color: white;
-    color: #2c7363;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-    transition: all 0.3s ease;
-  }
-  
-  .hero-btn:hover {
-    background-color: #d2f3ec;
-    color: #000;
-  }
-  
+.hero-wrapper {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 600px;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-text {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  color: white;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-text h1 {
+  font-size: 58px;
+  margin: 10px 0;
+}
+
+.hero-text h4 {
+  font-size: 18px;
+}
+
+.hero-text p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.shop-now {
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #333;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.new-arrival,
+.category-women,
+.category-men {
+  margin: 40px 10%;
+}
+
+.new-arrival h2,
+.category-women h2,
+.category-men h2 {
+  margin-bottom: 20px;
+  margin-top: 40px;
+  margin-left: 0;
+  text-align: left;
+}
+
+.item-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.item-row1 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 100px;
+}
+.item-row div {
+  text-align: center;
+}
+
+.item-row p {
+  margin: 10px 0 5px;
+  font-weight: 500;
+}
+
+.item-row a {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.item-row a:hover {
+  text-decoration: underline;
+}
+
+
+
+.item-row img {
+  width: 290px;
+  height: 360px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.item-row1 img {
+  width: 290px;
+  height: 290px;
+  object-fit: cover;
+  border-radius: 10px;
+}

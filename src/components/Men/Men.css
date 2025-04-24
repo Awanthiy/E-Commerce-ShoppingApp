@@ -1,0 +1,213 @@
+/* Men.css */
+.men-clothing-page {
+    display: flex;
+    font-family: sans-serif;
+    padding: 20px;
+    background-color: #f8f8f8;
+  }
+  
+  .sidebar {
+    width: 250px;
+    margin-right: 20px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .filter-section h2,
+  .filter-section h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #333;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .categories ul,
+  .colors-list,
+  .sizes-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 15px;
+  }
+  
+  .categories ul {
+    padding-left: 15px;
+  }
+  
+  .categories li {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .categories input[type="checkbox"] {
+    margin-right: 8px;
+  }
+  
+  .view-more {
+    border: none;
+    background: none;
+    color: #007bff;
+    cursor: pointer;
+    padding: 5px 0;
+    text-align: left;
+    margin-top: 10px;
+  }
+  
+  .price-filter h3 {
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .price-filter .price-range {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  
+  .price-filter input[type="range"] {
+    flex-grow: 1;
+    margin: 0 5px;
+  }
+  
+  .price-filter .price-values {
+    display: flex;
+    justify-content: space-between;
+    color: #777;
+  }
+  
+  .color-filter h3 {
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .colors-list li {
+    display: inline-block;
+    margin-right: 8px;
+  }
+  
+  .color-swatch {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    cursor: pointer;
+  }
+  
+  .color-swatch.black { background-color: black; }
+  .color-swatch.blue { background-color: blue; }
+  .color-swatch.gray { background-color: gray; }
+  .color-swatch.white { background-color: white; }
+  .color-swatch.green { background-color: green; }
+  .color-swatch.brown { background-color: brown; }
+  .color-swatch.navy { background-color: navy; }
+  .color-swatch.olive { background-color: olive; }
+  .color-swatch.red { background-color: red; }
+  .color-swatch.orange { background-color: orange; }
+  .color-swatch.yellow { background-color: yellow; }
+  .color-swatch.lightblue { background-color: lightblue; }
+  
+  .size-filter h3 {
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .sizes-list li {
+    display: inline-block;
+    margin-right: 5px;
+    margin-bottom: 5px;
+  }
+  
+  .sizes-list button {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #555;
+  }
+  
+  .sizes-list button:hover {
+    background-color: #eee;
+  }
+  
+  .product-grid {
+    flex-grow: 1;
+  }
+  
+  .grid-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .grid-header h2 {
+    margin: 0;
+    color: #333;
+  }
+  
+  .sort-options span {
+    margin-left: 15px;
+    color: #777;
+    cursor: pointer;
+  }
+  
+  .sort-options span.active {
+    color: #007bff;
+    font-weight: bold;
+  }
+  
+  .product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .product-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .product-image {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 0.75; /* Maintain a consistent image ratio */
+    overflow: hidden;
+  }
+  
+  .product-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .product-info {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .product-name {
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 1em;
+    color: #333;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  
+  .product-price {
+    color: #007bff;
+    font-weight: bold;
+  }
