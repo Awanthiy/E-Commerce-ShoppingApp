@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Navigation.css';
 import { Heart, User, ShoppingCart, Search } from 'lucide-react';
-import { Link, useLocation } from 'react-router-dom'; // Import Link & useLocation
+import { Link, useLocation } from 'react-router-dom';
 
 const Navigation = () => {
   const [activeIcons, setActiveIcons] = useState({
@@ -33,7 +33,6 @@ const Navigation = () => {
           <li className={location.pathname === '/women' ? 'active' : ''}>
             <Link to="/women">Women</Link>
           </li>
-           
         </ul>
       </div>
 
@@ -46,14 +45,18 @@ const Navigation = () => {
           className={`nav-icon ${activeIcons.heart ? 'active-icon' : ''}`}
           onClick={() => toggleIcon('heart')}
         />
-        <User
-          className={`nav-icon ${activeIcons.user ? 'active-icon' : ''}`}
-          onClick={() => toggleIcon('user')}
-        />
-        <ShoppingCart
-          className={`nav-icon ${activeIcons.cart ? 'active-icon' : ''}`}
-          onClick={() => toggleIcon('cart')}
-        />
+        <Link to="/signin">
+          <User
+            className={`nav-icon ${activeIcons.user ? 'active-icon' : ''}`}
+            onClick={() => toggleIcon('user')}
+          />
+        </Link>
+        <Link to="/cart">
+          <ShoppingCart
+            className={`nav-icon ${activeIcons.cart ? 'active-icon' : ''}`}
+            onClick={() => toggleIcon('cart')}
+          />
+        </Link>
       </div>
     </div>
   );

@@ -5,7 +5,9 @@ import Hero from './components/Hero/Hero';
 import Women from './components/Women/Women';
 import Men from './components/Men/Men';
 import Footer from './components/Footer/Footer';
-import PDetail from './components/PDetail/PDetail'; // Product Detail Page
+import PDetail from './components/PDetail/PDetail';  
+import Cart from './components/Cart/Cart'; 
+import Signin from './components/Signin/Signin'; 
 
 function App() {
   return (
@@ -16,7 +18,9 @@ function App() {
           <Route path="/" element={<Hero />} />
           <Route path="/women" element={<Women />} />
           <Route path="/men" element={<Men />} />
-          <Route path="/PDetail/:id" element={<PDetail />} /> {/* Add this line */}
+          <Route path="/PDetail/:id" element={<PDetail />} />  
+          <Route path="/Cart" element={<Cart />} /> 
+          <Route path="/Signin" element={<Signin />} /> 
         </Routes>
         <Footer />
       </div>
